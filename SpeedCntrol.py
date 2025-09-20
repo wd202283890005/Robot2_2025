@@ -1,0 +1,12 @@
+def on_forever():
+    Tinybit.car_ctrl_speed2(Tinybit.CarState.CAR_RUN, 255, 255)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed2(Tinybit.CarState.CAR_RUN, 50, 50)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed2(Tinybit.CarState.CAR_RUN, 100, 100)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed2(Tinybit.CarState.CAR_RUN, 20, 20)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed2(Tinybit.CarState.CAR_RUN, 200, 200)
+    basic.pause(1000)
+basic.forever(on_forever)
